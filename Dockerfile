@@ -6,4 +6,5 @@ RUN rm -rf /var/cache/apk/* /tmp/*
 
 COPY ./nginx.conf /etc/nginx/nginx.conf
 
+STOPSIGNAL SIGTERM
 CMD ["nginx", "-g", "daemon off;"]
